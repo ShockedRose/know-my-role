@@ -41,6 +41,15 @@ body {
         }
     }
 
+    &__image-container {
+
+        &>img {
+            max-height: 88px;
+            margin: 0;
+        }
+
+    }
+
     &__textbox {
         position: absolute;
         border-radius: 20px;
@@ -54,8 +63,11 @@ body {
         min-width: 450px;
 
         & p {
+            margin-top: 0;
             font-size: 14px;
         }
+
+
 
         &--inactive {
             transform: translate(0, 0) !important;
