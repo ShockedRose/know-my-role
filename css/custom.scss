@@ -50,17 +50,26 @@ body {
         opacity: 1;
         transition-property: opacity, transform;
         transition-duration: 0.4s;
-        transition-timing-function: cubic-bezier(.13,.96,1,.97);
+        transition-timing-function: cubic-bezier(.13, .96, 1, .97);
+        min-width: 450px;
+
+        & p {
+            font-size: 14px;
+        }
+
         &--inactive {
             transform: translate(0, 0) !important;
             opacity: 0;
         }
+
         &:nth-of-type(1) {
             transform: translate(590px, -220px);
         }
+
         &:nth-of-type(2) {
             transform: translate(590px, -28px);
         }
+
         &:nth-of-type(3) {
             transform: translate(590px, 164px);
         }
@@ -68,26 +77,33 @@ body {
 
     &__responsibilities {
         position: absolute;
-        & > div {
-            background-color: purple;
+
+        &>div {
+            background-color: limegreen;
         }
     }
+
     &__objectives {
         position: absolute;
-        & > div {
-            background-color: green;
+
+        &>div {
+            background-color: lightblue;
+
         }
     }
+
     &__standards {
         position: absolute;
-        & > div {
-            background-color: lightblue;
+
+        &>div {
+            background-color: lightpink;
+            color: black;
         }
     }
 }
 
 // @keyframes textbox1 {
-    
+
 // }
 // @keyframes textbox2 {
 
