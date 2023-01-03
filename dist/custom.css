@@ -1,0 +1,8 @@
+/*!
+* reveal.js 4.4.0
+* https://revealjs.com
+* MIT licensed
+*
+* Copyright (C) 2011-2022 Hakim El Hattab, https://hakim.se
+*/
+@import url(https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap);body{font-family:"Maven Pro",sans-serif}.section{font-family:"Maven Pro",sans-serif}.section__button-group{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}.section__button{min-width:270px;transition:filter .2s;font-size:1.2rem;border-radius:30px;border:none;background-color:transparent;padding:.4em .8em}.section__button:hover{filter:brightness(.9)}.section__button--responsibilities{background-color:#32cd32}.section__button--standards{background-color:#ffb6c1}.section__button--objectives{background-color:#add8e6}.section__textbox{position:absolute;border-radius:20px;background-color:purple;padding:1.2rem;height:120px;opacity:1;transition-property:opacity,transform;transition-duration:.4s;transition-timing-function:cubic-bezier(.13,.96,1,.97)}.section__textbox--inactive{transform:translate(0,0)!important;opacity:0}.section__textbox:nth-of-type(1){transform:translate(590px,-220px)}.section__textbox:nth-of-type(2){transform:translate(590px,-28px)}.section__textbox:nth-of-type(3){transform:translate(590px,164px)}.section__responsibilities{position:absolute}.section__responsibilities>div{background-color:purple}.section__objectives{position:absolute}.section__objectives>div{background-color:green}.section__standards{position:absolute}.section__standards>div{background-color:#add8e6}

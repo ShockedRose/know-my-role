@@ -115,7 +115,27 @@ gulp.task('js-es6', () => {
         });
     });
 })
-gulp.task('js', gulp.parallel('js-es5', 'js-es6'));
+gulp.task('js-es6-custom', () => {
+    return rollup({
+        cache: cache.esm,
+        input: 'js/custom.js',
+        plugins: [
+            resolve(),
+            commonjs(),
+            babel( babelConfigESM ),
+            terser()
+        ]
+    }).then( bundle => {
+        cache.esm = bundle.cache;
+        return bundle.write({
+            file: './dist/custom.js',
+            format: 'es',
+            banner: banner,
+            sourcemap: false
+        });
+    });
+})
+gulp.task('js', gulp.parallel('js-es5', 'js-es6', 'js-es6-custom'));
 
 // Creates a UMD and ES module bundle for each of our
 // built-in plugins
@@ -183,7 +203,7 @@ gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
         .pipe(compileSass())
         .pipe(gulp.dest('./dist/theme')))
 
-gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
+gulp.task('css-core', () => gulp.src(['css/reveal.scss','css/custom.scss'])
     .pipe(compileSass())
     .pipe(autoprefixer())
     .pipe(minify({compatibility: 'ie9'}))

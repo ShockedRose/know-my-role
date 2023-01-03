@@ -9,15 +9,43 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
-
+		
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="dist/custom.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<div>Conoce my Rol</div>
+					<div>Front-end Developer</div>
+				</section>
+				<section>
+					<div class="section">
+						<div class="section section__button-group">
+							<button class="section section__button section__button--responsibilities">Responsabilidades</button>
+							<button class="section section__button section__button--standards">Estándares</button>
+							<button class="section section__button section__button--objectives">Objetivos</button>
+						</div>
+						<div class="section section__responsibilities">
+							<div class="section section__textbox section__textbox--responsibilities section__textbox--inactive"><p>Responsabilidades</p></div>
+							<div class="section section__textbox section__textbox--responsibilities section__textbox--inactive"><p>Estándares</p></div>
+							<div class="section section__textbox section__textbox--responsibilities section__textbox--inactive"><p>Objetivos</p></div>
+						</div>
+						<div class="section section__standards">
+							<div class="section section__textbox section__textbox--standards section__textbox--inactive"><p>Responsabilidades</p></div>
+							<div class="section section__textbox section__textbox--standards section__textbox--inactive"><p>Estándares</p></div>
+							<div class="section section__textbox section__textbox--standards section__textbox--inactive"><p>Objetivos</p></div>
+						</div>
+						<div class="section section__objectives">
+							<div class="section section__textbox section__textbox--objectives section__textbox--inactive"><p>Responsabilidades</p></div>
+							<div class="section section__textbox section__textbox--objectives section__textbox--inactive"><p>Estándares</p></div>
+							<div class="section section__textbox section__textbox--objectives section__textbox--inactive"><p>Objetivos</p></div>
+						</div>
+						
+					</div>
+				</section>
 			</div>
 		</div>
 
@@ -31,10 +59,11 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-		</script>
+			</script>
+			<script src="dist/custom.js"></script>
 	</body>
 </html>

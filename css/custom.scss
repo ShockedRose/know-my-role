@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');
+
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.section {
+    font-family: 'Maven Pro', sans-serif;
+
+    &__button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__button {
+        min-width: 270px;
+        transition: filter 0.2s;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        border: none;
+        background-color: transparent;
+        padding: 0.4em 0.8em;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+
+        &--responsibilities {
+            background-color: limegreen;
+        }
+
+        &--standards {
+            background-color: lightpink;
+        }
+
+        &--objectives {
+            background-color: lightblue;
+        }
+    }
+
+    &__textbox {
+        position: absolute;
+        border-radius: 20px;
+        background-color: purple;
+        padding: 1.2rem;
+        height: 120px;
+        opacity: 1;
+        transition-property: opacity, transform;
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(.13,.96,1,.97);
+        &--inactive {
+            transform: translate(0, 0) !important;
+            opacity: 0;
+        }
+        &:nth-of-type(1) {
+            transform: translate(590px, -220px);
+        }
+        &:nth-of-type(2) {
+            transform: translate(590px, -28px);
+        }
+        &:nth-of-type(3) {
+            transform: translate(590px, 164px);
+        }
+    }
+
+    &__responsibilities {
+        position: absolute;
+        & > div {
+            background-color: purple;
+        }
+    }
+    &__objectives {
+        position: absolute;
+        & > div {
+            background-color: green;
+        }
+    }
+    &__standards {
+        position: absolute;
+        & > div {
+            background-color: lightblue;
+        }
+    }
+}
+
+// @keyframes textbox1 {
+    
+// }
+// @keyframes textbox2 {
+
+// }
+// @keyframes textbox3 {
+
+// }
