@@ -8,30 +8,63 @@ body {
 .card {
     background-color: white;
     display: flex;
-    height: 280px;
-    margin-top: 0.4rem;
+    height: 222px;
+    margin-top: 60px;
     color: black;
     border-radius: 30px;
     align-items: center;
     justify-content: space-between;
     padding: 0.4rem;
 
-    &__card-left {
+    margin-bottom: 61px;
+
+    &__left {
         flex: 1;
-        text-align: center;
-    }
-    &__card-info {
-        flex: 2;
+        display: flex;
+        justify-content: center;
+
     }
 
-    
+    &__info {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 2rem;
+
+    }
+
+    &__title {
+        font-weight: bold;
+
+    }
+
+    &__membership {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        flex-direction: row-reverse;
+
+        & img {
+            max-width: 10%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+
+
 
     &__image-container {
         border-radius: 50%;
-        height: 110px;
+        height: 144px;
         overflow: hidden;
         padding: 0;
         aspect-ratio: 1/1;
+        box-shadow: -1px 6px 11px -3px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: -1px 6px 11px -3px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -1px 6px 11px -3px rgba(0, 0, 0, 0.44);
+
         & img {
             max-width: 100%;
             max-height: 100%;
@@ -39,6 +72,7 @@ body {
             height: 100%;
             object-fit: cover;
             object-position: 0 55%;
+            margin: 0;
         }
     }
 
